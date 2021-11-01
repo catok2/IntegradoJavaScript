@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/comprarticket.css">
+
+	<title>Bootstrap</title>
+
+</head>
+<body>
+
+	<header class="header-site "> 
+					<!---------               NAV     --------------------->
+
+					<nav class="navbar nav-compra container-fluid " >
+						
+      					
+						<div class="nav container-sm">
+
+
+							<div class="nav-logo">	
+								<a class="nav-text" aria-current="page" href="index.html" style="height:15vh;" >
+								 Conf Bs As</a>
+
+								</div>	
+								<ul class="nav">	
+									<li class="" >
+										<a class="nav-link focus-li"  href="#">La conferencia</a>
+									</li>
+									<li class="">
+										<a class="nav-link  focus-li"  href="#Oradores">Los oradores</a>
+									</li>
+									<li class="">
+										<a class="nav-link focus-li"  href="#informacio-fecha">El lugar y la fecha</a>
+									</li>
+									<li class="">
+										<a class="nav-link focus-li" href="#contacto" >Conviertete en orador</a>
+									</li>
+									<li class="">
+										<a class="nav-link focus-li" href="comprartickets.html" >Comprar tickets</a>
+									</li>
+								</ul>
+
+							</div>
+
+						</nav>
+
+						
+		</header>
+
+
+
+
+
+
+		<main class="container oradores cards-compra">
+
+				
+			
+						
+						<div class="row row-cols-1 row-cols-md-3 g-4 container  tickets-cards">
+								<div class="col">
+									<div class="card">
+										
+										<div class="card-body estudiante card-span">
+											
+											<h3 class="card-title ">Estudiante</h3>
+											
+											<p class="card-text-compra">Tienen un descuento.</p>
+											<br>
+												<span>80%</span>
+												<br>
+												<br>
+												<br>
+												<p class="card-texto text-muted">*Presentar documentacion</p>	
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card">
+										
+										<div class="card-body trainee card-span">
+											
+											<h3 class="card-title">Trainee</h3>
+											
+											<p class="card-text-compra">Tienen un descuento.</p>
+												<br>
+												<span>50%</span>
+												<br>
+												<br>
+												<br>
+												<p class="card-texto text-muted">*Presentar documentacion</p>	
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card">
+										
+										<div class="card-body junior card-span">
+											
+											<h3 class="card-title">Junior</h3>
+
+											
+
+											<p class="card-text-compra">Tienen un descuento.</p>
+												<br>
+												<span>15%</span>
+												<br>
+												<br>
+												<br>
+											<p class="card-texto text-muted">*Presentar documentacion</p>	
+										</div>
+									</div>
+								</div>
+
+				</div>
+					
+				</main>
+
+				 <section class=" contacto contacto-compra container">
+
+					<div class="titulo-oradores">
+					<h4>VENTA</h4>
+					<h1>VALOR DE TICKET $200</h1>
+
+					</div>
+
+
+					<form class="contacto-form tickets"  id="contacto">
+
+						<div class="row g-3  container w-100" style="padding: 1rem 0;">
+							<div class="col text-dato-ticket">
+								<input type="text" class="form-control tamaño-casilla nombre" placeholder="Nombre" aria-label="First name">
+								<span id="error-nombre"  class="validacion-error"></span>
+							</div>
+							<div class="col text-dato-ticket">
+								<input type="text" class="form-control tamaño-casilla apellido" placeholder="Apellido" aria-label="Last name">
+								<span id="error-apellido" class="validacion-error"></span>
+							</div>
+							
+
+						</div>
+							<div class="col text-dato-ticket">
+								<input type="text" class="form-control correo" placeholder="Correo" aria-label="Email">
+								<span id="error-correo"  class="validacion-error"></span>
+							</div>
+						<div class="cant-cat">
+							<div class="col text-datos">
+								 <label for="country" class="form-label">Cantidad</label>
+								<input type="text" class="form-control tamaño-casilla cantidad" placeholder="Cantidad" aria-label="cantidad">
+								<span id="error-cantidad"  class="validacion-error"></span>
+
+							</div>
+							<div class="col text-datos">
+								
+									<label for="country" class="form-label">Categoria</label>
+
+					              <select class="form-select tamaño-casilla descuento" id="descuento" required>
+
+					                <option value="estudiante">Estudiante</option>
+					                <option value="trainee">Trainee</option>
+					                <option value="junior">Junior</option>
+
+					              </select>
+					             
+							</div>
+
+						</div>	
+
+						<div class="text-total" id = "text-total">
+							<p>Total a Pagar: $</p>
+							<span class="precioTotal"></span>
+							
+								
+						</div>
+						<div class="botones">	
+							<button class="borrar btn3" >Borrar</button>
+							<button class="resumen btn3">Resumen</button>
+						</div>
+						
+					</form>
+
+
+				</section>
+
+				<footer>
+
+					<ul class="nav pie-pagina w-75">	
+						<li class="li-pie"  >
+							<a class="nav-link footer-text focus-li " style="width: 70%;" href="#">Preguntas Frecuentes</a>
+						</li>
+						<li class="li-pie">
+							<a class="nav-link focus-li" >Contáctanos</a>
+						</li>
+						<li class="li-pie">
+							<a class="nav-link focus-li "  >Prensa</a>
+						</li>
+						<li class="li-pie">
+							<a class="nav-link focus-li"  >Conferencias</a>
+						</li>
+						<li class="li-pie">
+							<a class="nav-link footer-text focus-li" style="width: 70%;">Términos y condiciones</a>
+						</li>
+						<li class="li-pie">
+							<a class="nav-link focus-li" >Privacidad</a>
+						</li>
+						<li class="li-pie">
+							<a class="nav-link focus-li"  >Estudiantes</a>
+						</li>
+					</ul>
+
+				</footer>
+
+
+				  <script src="js/main.js"></script>
+
+			</body>
+			</html>
